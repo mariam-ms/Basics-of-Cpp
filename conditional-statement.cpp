@@ -6,7 +6,7 @@ else
 { and run this if it's false }
 */
 
-//even and odd program
+//even and odd program(1)
 
 int main() {
 
@@ -22,6 +22,29 @@ else
 }
 
 cout<<"try one more time.."
+  
+  return 0;
 }
 
-/* nested if
+// nested if - triange type program (2)
+
+int main() {
+ 
+ float x,y,z;
+  cout<<"enter x,y,z";
+  cin>>x>>y>>z;
+  
+  if (x==y&&y==z)
+  {cout <<"this triangle is equailateral;
+   }
+  
+   else 
+   { if (x!=y && y!==z && z!=x)
+     cout<<"the triangle is scalene ";
+    else
+         cout<<"the triangle is isosoles ";
+   }
+}
+
+
+
