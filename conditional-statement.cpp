@@ -1,3 +1,17 @@
+// *condtional statement* 
+
+
+//ternary condtion - guessing program(1)
+
+cout<<"Host Number";
+cin>>hostusrnum;
+cout<<"Guest Number";
+cin>>guestusrnum;
+
+(hostusrnum==guestusrnum) ? cout<<"your guessing is correct!" : cout<<"failed";
+
+
+//conditional if - even and odd program (2)
 /* if/else statement
 
 if (condition)
@@ -5,8 +19,6 @@ if (condition)
 else 
 { and run this if it's false }
 */
-
-//even and odd program(1)
 
 int main() {
 
@@ -26,7 +38,9 @@ cout<<"try one more time.."
   return 0;
 }
 
-// nested if - triange type program (2)
+// nested if - triange type program(3)
+/* more than if,else inside the body of if 
+*/
 
 int main() {
  
@@ -45,6 +59,106 @@ int main() {
          cout<<"the triangle is isosoles ";
    }
 }
+
+// switch case - calculator program(4) 
+/*we choose the thing that our switching is depending on 
+.. if operation is - or + or .. it will get into the desirabel case*/
+
+switch(operations)
+{ case '-' :cout<<num1<<operation<<num2<< "="<<num1-num2;break;
+ case '+' :cout<<num1<<operation<<num2<< "="<<num1+num2;break;
+ case '/' :cout<<num1<<operation<<num2<< "="<<num1/num2;break;
+ case '*' :cout<<num1<<operation<<num2<< "="<<num1*num2;break;
+case '%' :
+ 
+ bool isNum1int , isNum2int;
+ isNum1int=((int)num1==num1)
+ isNum2int=((int)num2==num2)
+   
+   if(isNum1int && isNum2int)
+    cout<<num1<<operation<<num2<< "="<<num1%num2;
+ else 
+   cout<<"this is not valid";
+ break;
+ 
+ dafault : cout<<"Not valid operation";
+}
+
+// LOOPS - * while *
+// itration program (5)
+
+int counter = 100;
+while (counter<=500)
+{ if (counter%3==0 && counter%5==0)
+  cout<<"counter";
+ counter++;
+ }
+
+// how many digits in this number program (6)
+
+int Number; //number that we will count its digits 
+cout<<"Enter Number.."
+cin>>number;
+
+if (number==0); //if this digit is zero .. it won't continue to the last of program
+cout<<"you have entered 0\n";
+
+else {
+ if (number<0) //if my numvber is negative, we should make it positive 
+    number*=-1;
+  
+int counter=0;
+while (counter>0)
+{ 
+  number/=10;
+  counter++;
+}
+  
+  cout<<"Number contains"<<counter<<"Digits\n";
+  }
+
+
+//inverting your number program(7)
+
+int invertednumber=0, number;
+cout<<"enter your number";
+cin>>number; //123
+while(number!=0)
+  { invertednumber*=10; //0,30,320
+   int lastdigit= number%10; //3,2,1
+   invertednumber+=lastdigit; //0+3=3 ,30+2=32, 320+1=321 (done .. inverted)
+   number/=10; //12,1,0
+
+}
+
+//LOOPS - Do while
+// passcode attampts program(8)
+
+int userpin=5555, pin, errorcounter=0;
+
+do {
+    cout<<"Enter the pin: ";
+    cin>>pin;
+  if(pin!=userpin)
+    errorcounter++;
+  
+while(errorcounter<3 && pin!=userpin);
+cout<<"loading .. ";
+  else
+    cout<<"blocked .. ";
+}
+
+
+//LOOPS - for loops
+// factorial program(9)
+
+int number;
+cout<<"Number: ";
+cin>>number;
+int factorial=1;
+for(int i =0; i<=number; i++)
+  factorlial*=i;
+cout<<factorial;
 
 
 
