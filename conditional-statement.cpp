@@ -152,13 +152,56 @@ cout<<"loading .. ";
 //LOOPS - for loops
 // factorial program(9)
 
-int number;
-cout<<"Number: ";
-cin>>number;
-int factorial=1;
-for(int i =0; i<=number; i++)
-  factorlial*=i;
-cout<<factorial;
+ int number;
+  cout<<"Number: ";
+     cin>>number;
+     int factorial=1;
+     for(int i =0; i<=number; i++)
+        factorlial*=i;
+          cout<<factorial;
 
 
+// Multiplication table program(10)
+
+for(int i=1; i<=10; i++)
+  
+{ for (int j=1; j<=10; j++)
+  cout<<i<<"*"<<j<<i*j<<endl;
+   
+ cout<<endl;
+}
+
+
+// draw a rectangle program(11)
+ int height;
+cout<<"Enter the height :";
+cin>>height;
+int width;
+cout<<"Enter the width :";
+cin>>width;
+char symbol;
+cout<<"Enter the symbol :";
+cin>>symbol;
+for(int h=0; h<height; h++){
+  for(int w=0; w<width;w++)
+    cout<<symbol<<endl;
+  cout<<endl;
+}
+
+
+//nested loop - for and do while loops
+// we wanted user to enter 3 grades each grade is between is more than 1 less than 5 and their avrg - program(1)
+
+int grade;
+int sum=0;
+for(int i =0; i<3; i++)
+{ do { 
+        cout<<"Enter grade"<<i+1;
+       cin>>grade;
+}
+      while(grade<1 || grade > 5);
+     sum+=grade;
+}
+cout<<"sum"<<sum;
+cout<<"avg"<(fload)sum/3;
 
