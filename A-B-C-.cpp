@@ -1,9 +1,15 @@
 //to clear screen from commands
 system("cls")
-
   
+// to print 
+ cout<<"hello world"<<x;
+
+//to enter sth
+cin>>x;
+getline(cin,x); //if x carries long sentence
   
 // arithamtic operators +,-,/,%,*
+
 int counter=0; //encrement counter
    counter++;
    cout<<counter;
