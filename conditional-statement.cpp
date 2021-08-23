@@ -188,9 +188,24 @@ for(int h=0; h<height; h++){
   cout<<endl;
 }
 
+// draw a rectangle program(12)
+ int length;
+cout<<"Enter the length :";
+cin>>length;
+int width;
+cout<<"Enter the width :";
+cin>>width;
+char symbol;
+cout<<"Enter the symbol :";
+cin>>symbol;
+for(int i=1; i<=lenght; ++){
+  for(int w=1; w<=i;w++)
+    cout<<symbol<<endl;
+  cout<<endl;
+}
 
 //nested loop - for and do while loops
-// we wanted user to enter 3 grades each grade is between is more than 1 less than 5 and their avrg - program(1)
+// we wanted user to enter 3 grades each grade is between is more than 1 less than 5 and their avrg - program(13)
 
 int grade;
 int sum=0;
